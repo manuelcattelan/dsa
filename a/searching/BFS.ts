@@ -4,7 +4,7 @@ type Node<T> = {
   right: Node<T> | null;
 };
 
-export default function BFSOnBST(head: Node<number>, needle: number): boolean {
+export default function BFS(head: Node<number>, needle: number): boolean {
   const searchQueue = [head];
 
   while (searchQueue.length) {
